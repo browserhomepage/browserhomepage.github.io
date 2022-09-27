@@ -1,0 +1,154 @@
+<!DOCTYPE html><html>
+<head>
+<meta charset="utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+
+	<title>Homepage</title>
+
+<link rel="shortcut icon" href="favicon.ico">
+
+<link href="./css/bootstrap.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="./css/frontstyle.css">
+
+
+
+
+<!-- jQuery -->
+<script src="./assets/js/jquery-3.1.0.min.js"></script>
+<script src="./assets/js/jquery-migrate-3.0.0.min.js"></script>
+
+</head>
+
+
+<style type="text/css">
+body  {
+	
+/*背景照*/	
+background-image:url(https://img1.imgtp.com/2022/09/26/eYofjBUl.jpg);
+
+
+z-index: -1;
+background-repeat:no-repeat;
+background-attachment:fixed;
+background-size: cover;
+height: 100%;
+width: 100%;
+}
+</style>
+
+
+
+<body>
+
+
+<div class="container">
+
+<div class="input-group input-group-lg">
+  <form action="https://cn.bing.com/search?" method="get" target="_blank">
+  <input type="text" class="form-control" name="search" id="search">
+</div>
+  <center>
+    <input type="submit" value="必应" id="bing" button type="button" class="btn btn-primary" />
+    <input type="submit" value="知乎" id="zhihu" button type="button" class="btn btn-primary"/>
+    <input type="submit" value="淘宝" id="taobao" button type="button" class="btn btn-primary"/>
+    <input type="submit" value="豆瓣" id="douban" button type="button" class="btn btn-primary" />
+    <input type="submit" value="影视" id="yingshi" button type="button" class="btn btn-primary"/>
+    <input type="submit" value="书籍" id="shuji" button type="button" class="btn btn-primary"/>
+    <input type="submit" value="小红书" id="xiaohongshu" button type="button" class="btn btn-primary" />
+    <input type="submit" value="公众号" id="gongzhonghao" button type="button" class="btn btn-primary" />
+    <input type="submit" value="微博" id="weibo" button type="button" class="btn btn-primary" />
+    <input type="submit" value="B站" id="bzhan" button type="button" class="btn btn-primary"/>
+    <input type="submit" value="谷歌" id="google" button type="button" class="btn btn-primary"/>
+  </center>
+
+  </form>
+  </div>
+  <script>
+    var sAddress=document.getElementsByTagName("form")[0];
+    var sInfor=document.getElementById("search");
+    var sbing=document.getElementById("bing");
+    var szhihu=document.getElementById("zhihu");
+    var staobao=document.getElementById("taobao");
+    var sdouban=document.getElementById("douban");
+    var syingshi=document.getElementById("yingshi");
+    var sshuji=document.getElementById("shuji");
+    var sxiaohongshu=document.getElementById("xiaohongshu");
+    var sgongzhonghao=document.getElementById("gongzhonghao");
+    var sweibo=document.getElementById("weibo");
+    var sbzhan=document.getElementById("bzhan");
+    var sgoogle=document.getElementById("google");
+ 
+    //必应
+    sbing.onclick=function(){
+      sAddress.action="https://cn.bing.com/search?";
+      sInfor.name="q";
+    };
+
+
+    //知乎
+    szhihu.onclick=function(){
+      sAddress.action="https://www.zhihu.com/search?";
+      sInfor.name="q";
+      sInfor.type="question";
+    }
+    
+    //淘宝
+    staobao.onclick=function(){
+      sAddress.action="https://s.taobao.com/search?";
+      sInfor.name="q";
+    }
+    
+    //豆瓣
+    sdouban.onclick=function(){
+      sAddress.action="https://www.douban.com/search?";
+      sInfor.name="q";
+      //sInfor.type="question";
+    }
+	  
+    //影视
+    syingshi.onclick=function(){
+      sAddress.action="https://7080.wang/so.html?";
+      sInfor.name="wd";
+    }
+	  
+    //书籍
+    sshuji.onclick=function(){
+      sAddress.action="https://zlibrary.cf/s/?";
+      sInfor.name="q";
+    };
+   
+    //小红书
+    sxiaohongshu.onclick=function(){
+      sAddress.action="https://m.sogou.com/web/xiaohongshu?";
+      sInfor.name="keyword";
+    }
+	  
+     //公众号
+    sgongzhonghao.onclick=function(){
+      sAddress.action="https://weixin.sogou.com/weixin?type=2&";
+      sInfor.name="query";
+    }
+	  
+    //微博
+    sweibo.onclick=function(){
+      sAddress.action="https://s.weibo.com/weibo?";
+      sInfor.name="q";
+    }
+	  
+    //B站
+    sbzhan.onclick=function(){
+      sAddress.action="https://search.bilibili.com/all?";
+      sInfor.name="keyword";
+    }
+	  
+    //谷歌
+    sgoogle.onclick=function(){
+      sAddress.action="https://g3.luciaz.me/search?";
+      sInfor.name="q";
+    }
+
+  </script>
+ </div>
+</body>
+</html>
