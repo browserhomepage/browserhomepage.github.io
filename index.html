@@ -126,13 +126,12 @@ width: 100%;
 	  
     //公众号
      $('#gongzhonghao').click(function() {
-	  "queryUrl": "http://weixin.sogou.com/weixin?type=2&query={}&ie=utf8";
-          let searchUrl = site.queryUrl.replace("{}", $('#search').val());
-          if (searchUrl) {
-            window.open(searchUrl, "_blank");
-            return false;
-	  };
-     });
+      var query = $('#search').val();
+      if ( query ) {
+        window.open("http://weixin.sogou.com/weixin?type=2&query=" + query + "&ie=utf8", "_blank");
+        return false;
+      };
+    });
 	    
     //微博
     sweibo.onclick=function(){
