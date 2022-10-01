@@ -53,7 +53,6 @@ width: 100%;
     <input type="submit" value="知乎" id="zhihu" button type="button" class="btn btn-primary"/>
     <input type="submit" value="淘宝" id="taobao" button type="button" class="btn btn-primary"/>
     <input type="submit" value="豆瓣" id="douban" button type="button" class="btn btn-primary" />
-    <input type="submit" value="影视" id="yingshi" button type="button" class="btn btn-primary"/>
     <input type="submit" value="书籍" id="shuji" button type="button" class="btn btn-primary"/>
     <input type="submit" value="小红书" id="xiaohongshu" button type="button" class="btn btn-primary" />
     <input type="submit" value="公众号" id="gongzhonghao" button type="button" class="btn btn-primary" />
@@ -71,7 +70,6 @@ width: 100%;
     var szhihu=document.getElementById("zhihu");
     var staobao=document.getElementById("taobao");
     var sdouban=document.getElementById("douban");
-    var syingshi=document.getElementById("yingshi");
     var sshuji=document.getElementById("shuji");
     var sxiaohongshu=document.getElementById("xiaohongshu");
     var sgongzhonghao=document.getElementById("gongzhonghao");
@@ -105,13 +103,7 @@ width: 100%;
       sInfor.name="q";
       //sInfor.type="question";
     }
-	  
-    //影视
-    syingshi.onclick=function(){
-      sAddress.action="https://7080.wang/so.html?";
-      sInfor.name="wd";
-    }
-	  
+
     //书籍
     sshuji.onclick=function(){
       sAddress.action="https://zlibrary.cf/s/?";
