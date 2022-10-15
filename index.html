@@ -48,6 +48,7 @@ width: 100%;
     <input type="submit" value="淘宝" id="taobao" button type="button" class="btn btn-primary"/>
     <input type="submit" value="豆瓣" id="douban" button type="button" class="btn btn-primary" />
     <input type="submit" value="书籍" id="shuji" button type="button" class="btn btn-primary"/>
+    <input type="submit" value="音乐" id="yinyue" button type="button" class="btn btn-primary"/>
     <input type="submit" value="小红书" id="xiaohongshu" button type="button" class="btn btn-primary" />
     <input type="submit" value="公众号" id="gongzhonghao" button type="button" class="btn btn-primary" />
     <input type="submit" value="微博" id="weibo" button type="button" class="btn btn-primary" />
@@ -65,6 +66,7 @@ width: 100%;
     var staobao=document.getElementById("taobao");
     var sdouban=document.getElementById("douban");
     var sshuji=document.getElementById("shuji");
+	 var syinyue=document.getElementById("yinyue);
     var sxiaohongshu=document.getElementById("xiaohongshu");
     var sgongzhonghao=document.getElementById("gongzhonghao");
     var sweibo=document.getElementById("weibo");
@@ -103,6 +105,13 @@ width: 100%;
       sAddress.action="https://zh.1lib.vip/s/?";
       sInfor.name="q";
     };
+	  
+    //音乐
+    syinyue.onclick=function(){
+      sAddress.action="https://www.kugou.com/yy/html/search.html#searchType=song&";
+      sInfor.name="searchKeyWord";
+    };
+
    
     //小红书
     sxiaohongshu.onclick=function(){
