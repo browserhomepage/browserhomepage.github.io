@@ -107,12 +107,14 @@ width: 100%;
     };
 	  
     //音乐
-    syinyue.onclick=function(){
-      sAddress.action="http://tool.liumingye.cn/music/?page=searchPage#/search/B/song"; 
-	sInfor.name="/";
-    };
-
-   
+    $('#yinyue').click(function() {
+      var query = $('#search').val();
+      if ( query ) {
+        window.open("http://tool.liumingye.cn/music/?page=searchPage#/search/B/song/" + query);
+       return false;
+     };
+   });
+	   
     //小红书
     sxiaohongshu.onclick=function(){
       sAddress.action="https://m.sogou.com/web/xiaohongshu?";
