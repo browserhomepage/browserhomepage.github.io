@@ -55,6 +55,7 @@ width: 100%;
     <input type="submit" value="公众号" id="gongzhonghao" button type="button" class="btn btn-primary" />
     <input type="submit" value="微博" id="weibo" button type="button" class="btn btn-primary" />
     <input type="submit" value="B站" id="bzhan" button type="button" class="btn btn-primary"/>
+<input type="submit" value="油管" id="youtube" button type="button" class="btn btn-primary"/>
     <input type="submit" value="谷歌" id="google" button type="button" class="btn btn-primary"/>
   </center>
 
@@ -73,6 +74,7 @@ width: 100%;
     var sgongzhonghao=document.getElementById("gongzhonghao");
     var sweibo=document.getElementById("weibo");
     var sbzhan=document.getElementById("bzhan");
+var syoutube=docutuoument.getElementById("youtube");
     var sgoogle=document.getElementById("google");
  
     //必应
@@ -143,7 +145,11 @@ width: 100%;
       sAddress.action="https://search.bilibili.com/all?";
       sInfor.name="keyword";
     }
-	  
+	 //油管
+    syoutube.onclick=function(){
+      sAddress.action="https://www.youtube.com/results?";
+      sInfor.name="search_query";
+    }
     //谷歌
     sgoogle.onclick=function(){
       sAddress.action="https://www.google.com/search?";
