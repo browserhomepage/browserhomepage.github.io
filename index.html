@@ -104,10 +104,13 @@ width: 100%;
     }
 
     //阅读
-    syuedu.onclick=function(){
-      sAddress.action="https://node2.v4.zhelper.net/search/";
-      sInfor.name="q";
-    };
+      $('#yuedu').click(function() {
+      var query = $('#search').val();
+      if ( query ) {
+        window.open("https://node2.v4.zhelper.net/search/" + query);
+       return false;
+     };
+   });
 	  
     //音乐
     $('#yinyue').click(function() {
