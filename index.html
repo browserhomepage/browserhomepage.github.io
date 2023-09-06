@@ -51,7 +51,6 @@ width: 100%;
     <input type="submit" value="豆瓣" id="douban" button type="button" class="btn btn-primary" />
     <input type="submit" value="阅读" id="yuedu" button type="button" class="btn btn-primary"/>
     <input type="submit" value="音乐" id="yinyue" button type="button" class="btn btn-primary"/>
-    <input type="submit" value="小红书" id="xiaohongshu" button type="button" class="btn btn-primary" />
     <input type="submit" value="微博" id="weibo" button type="button" class="btn btn-primary" />
     <input type="submit" value="B站" id="bzhan" button type="button" class="btn btn-primary"/>
     <input type="submit" value="油管" id="youtube" button type="button" class="btn btn-primary"/>
@@ -69,7 +68,6 @@ width: 100%;
     var sdouban=document.getElementById("douban");
     var syuedu=document.getElementById("yuedu");
 	var syinyue=document.getElementById("yinyue");
-    var sxiaohongshu=document.getElementById("xiaohongshu");
     var sgongzhonghao=document.getElementById("gongzhonghao");
     var sweibo=document.getElementById("weibo");
     var sbzhan=document.getElementById("bzhan");
@@ -122,10 +120,10 @@ width: 100%;
    });
 	   
     //小红书
-    sxiaohongshu.onclick=function(){
-      sAddress.action="https://m.sogou.com/web/xiaohongshu?";
-      sInfor.name="keyword";
-    }
+    //sxiaohongshu.onclick=function(){
+      //sAddress.action="https://m.sogou.com/web/xiaohongshu?";
+     //sInfor.name="keyword";
+	 
 	  
     //公众号
      $('#gongzhonghao').click(function() {
