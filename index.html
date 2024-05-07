@@ -46,6 +46,7 @@ width: 100%;
 </div>
   <center>
     <input type="submit" value="必应" id="bing" button type="button" class="btn btn-primary" />
+    <input type="submit" value="小红书" id="xiaohongshu" button type="button" class="btn btn-primary"/>
     <input type="submit" value="知乎" id="zhihu" button type="button" class="btn btn-primary"/>
     <input type="submit" value="淘宝" id="taobao" button type="button" class="btn btn-primary"/>
     <input type="submit" value="豆瓣" id="douban" button type="button" class="btn btn-primary" />
@@ -62,8 +63,9 @@ width: 100%;
   <script>
     var sAddress=document.getElementsByTagName("form")[0];
     var sInfor=document.getElementById("search");
-    var sbing=document.getElementById("bing");
-    var szhihu=document.getElementById("zhihu");
+    var sbing=document.getElementById("bing");	  
+var sxiaohongshu=document.getElementById("xiaohongshu");
+var szhihu=document.getElementById("zhihu");
     var staobao=document.getElementById("taobao");
     var sdouban=document.getElementById("douban");
     var syuedu=document.getElementById("yuedu");
@@ -80,6 +82,12 @@ width: 100%;
       sInfor.name="q";
     };
 
+    //小红书
+    sxiaohongshu.onclick=function(){
+      sAddress.action="ttps://www.xiaohongshu.com/search_result?";
+      sInfor.name="keyword";
+    };
+	 
 
     //知乎
     szhihu.onclick=function(){
@@ -118,13 +126,7 @@ width: 100%;
        return false;
      };
    });
-	   
-    //小红书
-    //sxiaohongshu.onclick=function(){
-      //sAddress.action="https://m.sogou.com/web/xiaohongshu?";
-     //sInfor.name="keyword";
-	 
-	  
+	  	  
     //公众号
      $('#gongzhonghao').click(function() {
       var query = $('#search').val();
