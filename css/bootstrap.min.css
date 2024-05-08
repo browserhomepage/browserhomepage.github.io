@@ -2672,7 +2672,7 @@ select[multiple].form-group-lg .form-control,textarea.form-group-lg .form-contro
 	background-color:#333
 }
 .btn-primary {
-        color: rgba(255,255,255,.9);
+        color: rgb(0,0,0);
 	border: none;
 	backdrop-filter: blur(20px);
 	background-color: rgba(255,255,255,.2);
